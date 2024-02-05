@@ -17,3 +17,10 @@
     --eggshell: #EEE7D6;
 }
 
+nav{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    background-color: var(--spacecadet);
+    color: var(--platinum);
+}
+
