@@ -13,3 +13,7 @@
     --platinum: #EDEEEA;
     --eggshell: #EEE7D6;
 }
+
+body {
+    width: 1000px;
+}
