@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+:root {
+    --spacecadet: #2A2D43;
+    --delft: #2C3C57;
+    --powder: #B2C3D2;
+    --carolina: #8DB1C4;
+    --azure: #DCE7E7;
+    --platinum: #EDEEEA;
+    --eggshell: #EEE7D6;
+}
