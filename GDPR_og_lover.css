@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+:root {
+    --spacecadet: #2A2D43;
+    --delft: #2C3C57;
+    --powder: #B2C3D2;
+    --carolina: #8DB1C4;
+    --azure: #DCE7E7;
+    --platinum: #EDEEEA;
+    --eggshell: #EEE7D6;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    background-color: var(--spacecadet);
+    color: var(--platinum);
+}
+
+header{
+    text-align: center;
+    color: var(--platinum);
+    background-color: var(--delft);
+    padding: 25px;
+    font-family: "Montserrat";
+}
+
+section{
+    font-family: "Work Sans", sans-serif;
+
+    margin-left:50px ;
+    margin-right: 50px;
+}
+
+.tekst_boks{
+    background-color: var(--carolina);
+    padding: 25px;
+}
