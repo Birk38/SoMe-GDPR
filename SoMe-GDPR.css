@@ -17,22 +17,58 @@
     --eggshell: #EEE7D6;
 }
 
-nav{
-    background-color: var(--spacecadet);
-    color: var(--platinum);    
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex {
     display: flex;
     align-items: center;
-    height: 100px;
+    gap: 20px;
     justify-content: space-between;
-    padding: 10px;
+}
+
+nav {
+    background-color: var(--spacecadet);
+}
+
+nav h1,
+nav i {
+    color: var(--platinum);
+}
+
+nav .container {
+    height: 120px;
 }
 
 h1 {
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--spacecadet);
 }
 
 i {
     font-size: 30px;
     margin: 20px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+#SoMe {
+    background-color: var(--eggshell);
+}
+
+#SoMe i {
+    color: var(--spacecadet);
+    padding: 10px;
+    font-size: 50px;
+}
+
+#SoMe .container {
+    text-align: center;
 }
