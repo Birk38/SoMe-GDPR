@@ -18,9 +18,21 @@
 }
 
 nav{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
     background-color: var(--spacecadet);
-    color: var(--platinum);
+    color: var(--platinum);    
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    padding: 10px;
 }
 
+h1 {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+i {
+    font-size: 30px;
+    margin: 20px;
+}
