@@ -47,6 +47,11 @@ section{
 
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 5px;
     align-items: center;
     
+}
+
+.tekst_boks:nth-of-type(2) img{
+    border-radius: 50px;
 }
