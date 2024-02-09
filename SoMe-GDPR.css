@@ -68,7 +68,7 @@ i {
 }
 
 #om {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("some_hero.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("some_hero.jpeg");
     height: 60vh;
     background-size: cover;
     background-position: center;
