@@ -55,6 +55,17 @@ i {
     margin: 20px;
 }
 
+#om {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("some_hero.jpeg");
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#om h1, p {
+    color: var(--platinum);
+}
+
 section {
     padding: 20px 0;
 }
