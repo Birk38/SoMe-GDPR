@@ -43,11 +43,23 @@ nav .container {
     height: 120px;
 }
 
-h1 {
+h1, h2 {
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color: var(--spacecadet);
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 i {
@@ -62,7 +74,7 @@ i {
     background-position: center;
 }
 
-#om h1, p {
+#om h1, #om p {
     color: var(--platinum);
 }
 
@@ -84,3 +96,15 @@ section {
     text-align: center;
 }
 
+/* KUN FOR GDPR */
+
+header{
+    text-align: center;
+    background-color: var(--eggshell);
+    padding: 25px;
+    font-family: "Montserrat";
+}
+
+.txt h2 {
+    border-bottom: solid 5px var(--eggshell);
+}
