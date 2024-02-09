@@ -44,4 +44,9 @@ section{
 .tekst_boks{
     background-color: var(--carolina);
     padding: 25px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    
 }
