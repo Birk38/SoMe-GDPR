@@ -43,6 +43,13 @@ nav .container {
     height: 120px;
 }
 
+header{
+    text-align: center;
+    background-color: var(--eggshell);
+    padding: 25px;
+    font-family: "Montserrat";
+}
+
 h1 {
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
