@@ -65,6 +65,7 @@ p {
 i {
     font-size: 30px;
     margin: 20px;
+    color: var(--spacecadet);
 }
 
 #om {
@@ -87,7 +88,6 @@ section {
 }
 
 #SoMe i {
-    color: var(--spacecadet);
     padding: 10px;
     font-size: 50px;
 }
@@ -96,13 +96,26 @@ section {
     text-align: center;
 }
 
-/* KUN FOR GDPR */
+/* PARAGRAFER / GDPR TEKST */
 
 header{
     text-align: center;
     background-color: var(--eggshell);
     padding: 25px;
     font-family: "Montserrat";
+}
+
+.highlight {
+    background-color: var(--azure);
+}
+
+#gdprfakta {
+    display: none;
+    margin-top: 10px;
+}
+
+#gdpr:hover + #gdprfakta {
+    display: block;
 }
 
 .txt h2 {
@@ -136,4 +149,29 @@ header{
 
 .fire {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("speak.jpg");
+}
+
+/* KILDER */
+
+.kilde {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 80px 1fr;
+    align-items: center;
+}
+
+.kilde h3 {
+    grid-column: 2/3;
+}
+
+.kilde p {
+    grid-column: 2/3;
+}
+
+.kursiv {
+    font-style: italic;
+}
+
+.kilde a {
+    color: var(--carolina);
 }
