@@ -108,3 +108,32 @@ header{
 .txt h2 {
     border-bottom: solid 5px var(--eggshell);
 }
+
+.txt {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.img {
+    height: 300px;
+    background-position: 50% 33%;
+    background-size: cover;
+}
+
+.en {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("parlament.jpg");
+    background-position: bottom;
+} 
+
+.to {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("persondata.jpg");
+    background-position: center;
+}
+
+.tre {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("privacy_policy.jpg");
+}
+
+.fire {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("speak.jpg");
+}
