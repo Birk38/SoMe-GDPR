@@ -109,6 +109,10 @@ header{
     background-color: var(--azure);
 }
 
+#gdpr {
+    width: fit-content;
+}
+
 #gdprfakta {
     display: none;
     margin-top: 10px;
