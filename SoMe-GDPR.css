@@ -111,8 +111,18 @@ td, th {
     padding: 10px;
 }
 
-#tiktok {
+.apper {
     display: flex;
+    gap: 30px;
+}
+
+.apper img {
+    height: 120px;
+    width: 120px;
+}
+
+.apper div:nth-child(2){
+    max-width: 600px;
 }
 
 
