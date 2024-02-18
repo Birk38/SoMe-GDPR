@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -45,19 +46,16 @@ nav .container {
 
 h1, h2 {
     font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color: var(--spacecadet);
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-weight: 400;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -69,7 +67,7 @@ i {
 }
 
 #om {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Ressurser/some_hero.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("some_hero.jpeg");
     height: 60vh;
     background-size: cover;
     background-position: center;
@@ -92,9 +90,23 @@ section {
     font-size: 50px;
 }
 
-#SoMe .container {
-    text-align: center;
+#SoMe .container:first-of-type {
+    display: flex;
+    justify-content: center;
 }
+#SoMe table {
+    text-align: left;
+    height: fit-content;
+}
+
+td, th {
+    padding: 10px;
+}
+
+#tiktok {
+    display: flex;
+}
+
 
 /* PARAGRAFER / GDPR TEKST */
 
@@ -102,7 +114,6 @@ header{
     text-align: center;
     background-color: var(--eggshell);
     padding: 25px;
-    font-family: "Montserrat";
 }
 
 .highlight {
