@@ -77,16 +77,15 @@ nav .container {
 
 /*  OM SECTION  */
 #om {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Ressurser/some_hero.jpeg");
-    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("Ressurser/some_hero.jpeg");
+    min-height: 470px;
     background-size: cover;
     background-position: center;
 }
 
-#om h1, #om p {
+#om h1, #om h3, #om p {
     color: var(--platinum);
 }
-
 
 /*  SoME SECTION  */
 #SoMe {
@@ -117,8 +116,9 @@ td, th {
 }
 
 .apper img {
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
 
 .apper div:nth-child(2){
