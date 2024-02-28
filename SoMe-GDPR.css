@@ -112,22 +112,28 @@ td, th {
     padding: 10px;
 }
 
-.apper {
+.app {
     display: flex;
     gap: 30px;
 }
 
-.apper img {
+.app img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
 }
 
-.apper div:nth-child(2){
+.app div:nth-child(2){
     max-width: 600px;
 }
 
-
+.apper h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.apper {
+    display: none;
+}
 /* PARAGRAFER / GDPR TEKST */
 
 header{
