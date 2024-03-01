@@ -99,6 +99,10 @@ nav .container {
     font-size: 50px;
 }
 
+#SoMe i:hover {
+    transform: scale(1.5);
+}
+
 #SoMe .container:first-of-type {
     display: flex;
     justify-content: center;
@@ -210,8 +214,13 @@ header{
 .kilde {
     display: grid;
     grid-template-columns: 80px 1fr;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+#kilde1 {
+    grid-template-rows: 80px 1fr;
 }
 
 .kilde h3 {
