@@ -1,22 +1,29 @@
 let jaButton = document.getElementById("jaButton")
 let neiButton = document.getElementById("neiButton")
 
-// funksjon som sender 1 "ja" til meningsmålingen
-jaButton.onclick = sendDAta(Ja)
+jaButton.onclick = sendJa
+neiButton.onclick = sendNei
 
-const url = 
+const url = //url
 
-jason.stringify()
-async function sendData() {
-    const response = await fetch(url)
-    const data = await.response.json()
-    console.log(data)
+  async function sendJa() {
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ value: "Ja" })
+      })
 }
 
-fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(Ja)
-  })
+async function sendNei() {
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ value: "Nei" })
+      })
+}
+
+
