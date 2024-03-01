@@ -35,11 +35,12 @@
 
 h1, h2 {
     font-size: 40px;
-    font-weight: 900;
     color: var(--spacecadet);
+    font-weight: 900;
 }
 
-h3 {
+h3 {    
+    color: var(--spacecadet);
     font-size: 25px;
     font-weight: 400;
 }
@@ -103,6 +104,10 @@ nav .container {
     transform: scale(1.5);
 }
 
+.stor {
+    transform: scale(1.5);
+}
+
 #SoMe .container:first-of-type {
     display: flex;
     justify-content: center;
@@ -150,7 +155,11 @@ td, th {
 
 #tiktok {
     display: none;
-}   
+}  
+
+#falske h3 {
+    border-bottom: solid 5px var(--eggshell);
+}
 /* PARAGRAFER / GDPR TEKST */
 
 header{
@@ -243,3 +252,4 @@ iframe{
     left: 20%;
     position: relative;
  }
+
