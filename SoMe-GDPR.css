@@ -132,8 +132,21 @@ td, th {
     margin-top: 20px;
 }
 .apper {
+    display: block; /* Satt til block */
+}
+
+#face {
     display: none;
 }
+
+#insta {
+    display: none;
+    transition: transform 300ms;
+}
+
+#tiktok {
+    display: none;
+}   
 /* PARAGRAFER / GDPR TEKST */
 
 header{
