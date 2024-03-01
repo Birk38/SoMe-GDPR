@@ -27,7 +27,7 @@ async function sendNei() {
 }
 
 
-const url = "";
+//const url = "";
  
 const resultJson = '[{"svar": "ja", "antall": 10},{"svar":"nei","antall":6}]';
 const obj = JSON.parse(resultJson);
