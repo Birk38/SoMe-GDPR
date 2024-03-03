@@ -56,6 +56,11 @@ i {
     color: var(--spacecadet);
 }
 
+.border {
+    border-bottom: solid 2px var(--platinum) ;
+    padding-bottom: 5px;
+}
+
 section {
     padding: 20px 0;
 }
