@@ -81,6 +81,50 @@ nav .container {
 }
 
 
+
+/* F O O T E R */
+footer {
+    height: fit-content;
+    background-color: var(--spacecadet);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px 0 90px 0;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px 150px;
+    align-items: center;
+}
+
+footer h3, footer i {
+    color: var(--platinum);
+}
+
+footer h3 {
+    padding-bottom: 15px;
+    grid-column:1/6;
+    grid-row: 1/2;
+}
+
+footer i {
+    margin-left: 0px;
+}
+
+footer .flex {
+    justify-content: flex-start;
+    gap: 0px;
+}
+
+footer img {
+    height: 130px;
+    border: solid 2px;
+}
+
+
+
 /*  OM SECTION  */
 #om {
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("Ressurser/some_hero.jpeg");
@@ -164,7 +208,25 @@ td, th {
 
 #falske h3 {
     border-bottom: solid 5px var(--eggshell);
+    margin-top: 40px;
+    font-weight: bold;
 }
+
+h1.background {
+    padding: 51px 0 51px 205px;
+    color: var(--platinum);
+}
+
+#falske h1 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Ressurser/newspaper-bundle.jpg");
+}
+
+#poll h1 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Ressurser/feedback.jpg");
+    background-position: 100px;
+}
+
+
 /* PARAGRAFER / GDPR TEKST */
 
 header{
@@ -206,26 +268,22 @@ header{
 }
 
 .en {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Ressurser/parlament.jpg");
-    background-position: bottom;
-} 
-
-.to {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Ressurser/persondata.jpg");
     background-position: center;
 }
 
-.tre {
+.to {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Ressurser/privacy_policy.jpg");
 }
 
-.fire {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Ressurser/speak.jpg");
-}
+.tre {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Ressurser/parlament.jpg");
+    background-position: bottom;
+} 
 
 /* KILDER */
 
-.kilde {
+.kilder {
     display: grid;
     grid-template-columns: 80px 1fr;
     grid-template-rows: 1fr 1fr;
@@ -237,11 +295,11 @@ header{
     grid-template-rows: 80px 1fr;
 }
 
-.kilde h3 {
+.kilder h3 {
     grid-column: 2/3;
 }
 
-.kilde p {
+.kilder p {
     grid-column: 2/3;
 }
 
@@ -249,7 +307,7 @@ header{
     font-style: italic;
 }
 
-.kilde a {
+.kilder a {
     color: var(--carolina);
 }
 
@@ -257,4 +315,5 @@ iframe{
     left: 20%;
     position: relative;
  }
+
 
