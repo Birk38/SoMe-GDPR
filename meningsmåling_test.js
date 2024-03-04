@@ -50,13 +50,24 @@ async function getRequest() {
   const entries = await apiCallPromise.json()
   console.log(entries)
 
-  for (const entry of entries) {
-    console.log(entry)
-    const p = document.createElement("p")
-    p.textContent = "Entry: " + JSON.stringify(entry)
-    htmlObj.appendChild(p)
-  }
+   let data = [
+    {
+      x: [entries[0].svar, entries[1].svar],
+      y: [entries[0].antall, entries[1].antall],
+      type: 'bar'
+    }
+  ];
+
+
+  Plotly.newPlot('soylediagram', data)
+
+
 }
+
+
+
+
+
 
 //const url = "";
  
