@@ -206,6 +206,8 @@ td, th {
 
 #falske h3 {
     border-bottom: solid 5px var(--eggshell);
+    margin-top: 40px;
+    font-weight: bold;
 }
 
 h1.background {
@@ -264,22 +266,18 @@ header{
 }
 
 .en {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Ressurser/parlament.jpg");
-    background-position: bottom;
-} 
-
-.to {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Ressurser/persondata.jpg");
     background-position: center;
 }
 
-.tre {
+.to {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Ressurser/privacy_policy.jpg");
 }
 
-.fire {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Ressurser/speak.jpg");
-}
+.tre {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Ressurser/parlament.jpg");
+    background-position: bottom;
+} 
 
 /* KILDER */
 
