@@ -92,20 +92,10 @@ footer {
     padding: 30px 0 90px 0;
 }
 
-footer li {
-    margin-left: 20px;
-}
-
-footer a {
-    color: white;
-    border-bottom: solid;
-    border-width: 0.5px;
-}
-
 .foot {
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px 150px;
     align-items: center;
 }
 
@@ -115,10 +105,22 @@ footer h3, footer i {
 
 footer h3 {
     padding-bottom: 15px;
+    grid-column:1/6;
+    grid-row: 1/2;
+}
+
+footer i {
+    margin-left: 0px;
 }
 
 footer .flex {
     justify-content: flex-start;
+    gap: 0px;
+}
+
+footer img {
+    height: 130px;
+    border: solid 2px;
 }
 
 
