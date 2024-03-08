@@ -360,6 +360,18 @@ iframe {
 /* R E S P O N S I V */
 @media only screen and (max-width: 600px) {
 
+    h1 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
     .normal-menu {
         display: none;
     }
@@ -403,22 +415,21 @@ iframe {
         display: block;
     }
 
-    nav h1 {
-        font-size: 30px;
-    }
-
     nav i {
         font-size: 25px;
     }
-
-    section#om {
-        display: none;
-    }
-
+    
     .app {
         flex-wrap: wrap;
         text-align: center;
         justify-content: center;
     }
 
+    h1.background {
+        padding: 40px 0px 40px 15px;
+    }
+
+    footer {
+        display: flex;
+    }
 }
