@@ -54,12 +54,17 @@ async function getRequest() {
    let data = [
     {
       x: [entries[1].antall, entries[0].antall],
-      y: [entries[1].svar, entries[0].svar],
+      y: [entries[1].svar,entries[0].svar],
       type: 'bar',
       orientation: 'h'
     }
   ]
-  Plotly.newPlot('soylediagram', data)
+
+  let layout = {
+    name: ""
+  };
+
+  Plotly.newPlot('soylediagram', data, layout)
 }
 
 
