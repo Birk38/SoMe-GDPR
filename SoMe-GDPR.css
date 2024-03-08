@@ -200,22 +200,7 @@ th {
 <<<<<<< HEAD
 =======
 
-.apper {
-    display: block;
-    /* Satt til block */
-}
->>>>>>> f9ae6e0e38d5a794952a8cdb5bea54351d4a5c46
-
-#face {
-    display: none;
-}
-
-#insta {
-    display: none;
-    transition: transform 300ms;
-}
-
-#tiktok {
+.medie {
     display: none;
 }
 
@@ -416,7 +401,16 @@ iframe {
         font-size: 25px;
     }
 
-    section#om {
-        display: none;
+    #om h1 {
+        font-size: 30px;
     }
+
+    #om h3 {
+        font-size: 18px;
+    }
+
+    #om p {
+        font-size: 15px;
+    }
+
 }
