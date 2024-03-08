@@ -53,12 +53,32 @@ async function getRequest() {
 
    let data = [
     {
-      x: [entries[0].svar, entries[1].svar],
-      y: [entries[0].antall, entries[1].antall],
-      type: 'bar'
-    }
+      x: [entries[1].antall, entries[0].antall],
+      y: [entries[1].svar,entries[0].svar],
+      type: 'bar',
+      orientation: 'h',
+      marker: {
+        color: ['#2A2D43']
+    }}
   ]
-  Plotly.newPlot('soylediagram', data)
+
+  let layout = {
+    xaxis: {
+      tickfont: {
+        size: 14,
+        color: '#2A2D43'
+      }
+    },
+    yaxis: {
+      titlefont: {
+      size: 16,
+      color: '#2A2D43'
+      },
+      showticklabels: false
+    }
+  }
+
+  Plotly.newPlot('soylediagram', data, layout)
 }
 
 
