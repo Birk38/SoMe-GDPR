@@ -51,32 +51,29 @@ async function getRequest() {
   console.log(entries)
   console.log(entries.length)
 
-
-  for (let i = 0; i <= entries.length; i++) {
-    let data = [
-      {
-        x: [entries[i].svar],
-        y: [entries[i].antall],
-        type: 'bar'
-      }
-    ]
-    Plotly.newPlot('soylediagram', data)
-  }
-
-  //  let data = [
-  //   {
-  //     x: [entries[0].svar, entries[1].svar],
-  //     y: [entries[0].antall, entries[1].antall],
-  //     type: 'bar'
-  //   }
-  // ]
-  // Plotly.newPlot('soylediagram', data)
+   let data = [
+    {
+      x: [entries[0].svar, entries[1].svar],
+      y: [entries[0].antall, entries[1].antall],
+      type: 'bar'
+    }
+  ]
+  Plotly.newPlot('soylediagram', data)
 }
 
 
 
 
-
+  // for (let i = 0; i <= entries.length; i++) {
+  //   let data = [
+  //     {
+  //       x: [entries[i].svar],
+  //       y: [entries[i].antall],
+  //       type: 'bar'
+  //     }
+  //   ]
+  //   Plotly.newPlot('soylediagram', data)
+  // }
 
 //function JSONtoSTR(resultJson){
 //  const obj = JSON.parse(resultJson) 
