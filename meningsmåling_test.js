@@ -4,24 +4,24 @@ let neiButton = document.getElementById("neiButton")
 jaButton.onclick = sendJa
 neiButton.onclick = sendNei
 
-const URL = "https://rasmusweb.no/spm.php"
-const sporsmolsId = "undersokelse2"
+const url = "https://rasmusweb.no/post.php"
+const GetURL = "https://rasmusweb.no/get.php"
 
   async function sendJa() {
-    const response = await fetch(URL, {
+    const response = await fetch(url, {
         method: 'POST',
         headers: {
        //   'Content-Type': 'application/json'
         },
-        body: JSON.stringify({id: sporsmolsId, svar: "Ja" })
+        body: JSON.stringify({id: "undersokelse1", svar: "Ja" })
       })
       console.log("gikk det bra?", response.ok)
 }
 
 async function sendNei() {
-    const response = await fetch(URL, {
+    const response = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify({id: sporsmolsId, svar: "Nei" })
+        body: JSON.stringify({id: "undersokelse1", svar: "Nei" })
       })
 }
 
@@ -31,7 +31,7 @@ async function getRequest() {
   const htmlObj = document.getElementById("getResult")
   htmlObj.innerHTML = "Waiting for response"
 
-  const apiCallPromise = await fetch(URL + "?id=" + sporsmolsId, {
+  const apiCallPromise = await fetch(GetURL + "?id=" + "undersokelse1", {
     method: "GET",
     //  mode: "no-cors", // no-cors, *cors, same-origin
     headers: {
@@ -42,9 +42,9 @@ async function getRequest() {
 
   htmlObj.innerHTML = ""
 
-  // const p = document.createElement("p")
-  // p.textContent = "StatusCodeOK: " + apiCallPromise.ok
-  // htmlObj.appendChild(p)
+  const p = document.createElement("p")
+  p.textContent = "StatusCodeOK: " + apiCallPromise.ok
+  htmlObj.appendChild(p)
 
   // Getting the json entries from the response:
   const entries = await apiCallPromise.json()

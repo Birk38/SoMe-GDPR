@@ -127,8 +127,6 @@ footer img {
     border: solid 2px;
 }
 
-
-
 /*  OM SECTION  */
 #om {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("Ressurser/some_hero.jpeg");
@@ -198,21 +196,7 @@ th {
     margin-top: 20px;
 }
 
-.apper {
-    display: block;
-    /* Satt til block */
-}
-
-#face {
-    display: none;
-}
-
-#insta {
-    display: none;
-    transition: transform 300ms;
-}
-
-#tiktok {
+.medie {
     display: none;
 }
 
@@ -413,7 +397,16 @@ iframe {
         font-size: 25px;
     }
 
-    section#om {
-        display: none;
+    #om h1 {
+        font-size: 30px;
     }
+
+    #om h3 {
+        font-size: 18px;
+    }
+
+    #om p {
+        font-size: 15px;
+    }
+
 }

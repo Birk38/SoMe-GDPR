@@ -10,7 +10,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="Ressurser/favicon_mørk/favicon.ico" rel="icon" media="(prefers-color-scheme: light)" />
     <link href="Ressurser/favicon_lys/favicon.ico" rel="icon" media="(prefers-color-scheme: dark)" />
-    <script src="https://cdn.plot.ly/plotly-2.29.1.min.js" charset="utf-8"></script> <!--gjør at du kan lage søylediagram-->
     <title>Sosiale Spor - Sosiale medier</title>
 </head>
 
@@ -69,7 +68,7 @@
     </section>
 
     <main class="container apper">
-        <section id="face">
+        <section class="medie" id="face">
             <h1>Facebook</h1>
             <br>
             <div class="app">
@@ -106,7 +105,7 @@
             </div>
         </section>
 
-        <section id="insta">
+        <section class="medie" id="insta">
             <h1>Instagram</h1>
             <br>
             <div class="app">
@@ -140,7 +139,7 @@
             </div>
         </section>
 
-        <section id="tiktok">
+        <section class="medie" id="tiktok">
             <h1>TikTok</h1>
             <br>
             <div class="app">
@@ -233,12 +232,7 @@
     <section id="poll">
         <h1 class="background">Meningsmåling</h1>
         <div class="container">
-            <div id="knapper">
-            <button id="jaButton">Ja</button>
-            <button id="neiButton">Nei</button>
-            </div>
-            <div id="getResult"></div>
-            <div id="soylediagram"></div>
+
         </div>
     </section>
 
@@ -284,7 +278,6 @@
     </footer>
 
     <script src="SoME-GDPR.js"></script>
-    <script src="meningsmåling_test.js"></script>
 </body>
 
 </html>
