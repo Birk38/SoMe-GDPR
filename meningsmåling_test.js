@@ -49,19 +49,28 @@ async function getRequest() {
   // Getting the json entries from the response:
   const entries = await apiCallPromise.json()
   console.log(entries)
-
-   let data = [
-    {
-      x: [entries[0].svar, entries[1].svar],
-      y: [entries[0].antall, entries[1].antall],
-      type: 'bar'
-    }
-  ];
+  console.log(entries.length)
 
 
-  Plotly.newPlot('soylediagram', data)
+  for (let i = 0; i <= entries.length; i++) {
+    let data = [
+      {
+        x: [entries[i].svar],
+        y: [entries[i].antall],
+        type: 'bar'
+      }
+    ]
+    Plotly.newPlot('soylediagram', data)
+  }
 
-
+  //  let data = [
+  //   {
+  //     x: [entries[0].svar, entries[1].svar],
+  //     y: [entries[0].antall, entries[1].antall],
+  //     type: 'bar'
+  //   }
+  // ]
+  // Plotly.newPlot('soylediagram', data)
 }
 
 
