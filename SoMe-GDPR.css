@@ -341,8 +341,6 @@ iframe {
     filter: brightness(2);
 }
 
-
-
 /* R E S P O N S I V */
 @media only screen and (max-width: 600px) {
 
@@ -407,6 +405,12 @@ iframe {
 
     #om p {
         font-size: 15px;
+    }
+
+    .app {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
     }
 
 }
