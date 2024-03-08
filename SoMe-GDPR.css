@@ -189,9 +189,6 @@ td, th {
     text-align: center;
     margin-top: 20px;
 }
-.apper {
-    display: block; /* Satt til block */
-}
 
 #face {
     display: none;
