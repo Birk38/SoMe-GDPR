@@ -127,8 +127,6 @@ footer img {
     border: solid 2px;
 }
 
-
-
 /*  OM SECTION  */
 #om {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("Ressurser/some_hero.jpeg");
@@ -243,6 +241,7 @@ header {
     text-align: center;
     background-color: var(--eggshell);
     padding: 25px;
+    margin-bottom: 20px;
 }
 
 .highlight {
@@ -294,11 +293,8 @@ header {
 /* KILDER */
 
 .kilder {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 #kilde1 {
@@ -360,6 +356,12 @@ iframe {
 /* R E S P O N S I V */
 @media only screen and (max-width: 600px) {
 
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
     h1 {
         font-size: 30px;
     }
@@ -418,18 +420,35 @@ iframe {
     nav i {
         font-size: 25px;
     }
-    
+
     .app {
+        display: flex;
         flex-wrap: wrap;
-        text-align: center;
         justify-content: center;
+        text-align: center;
     }
 
     h1.background {
         padding: 40px 0px 40px 15px;
     }
 
-    footer {
-        display: flex;
+    iframe {
+        width: 280px;
+        height: 180px;
+        left: 10%;
+    }
+
+    .img {
+        height: 150px;
+        margin: 15px 0;
+    }
+
+    .tre {
+        margin-bottom: 0;
+    }
+
+    .kilder i {
+        font-size: 15px;
+        margin: 0 5px 0 0;
     }
 }
