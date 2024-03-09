@@ -63,17 +63,7 @@ async function getRequest() {
   ]
 
   let layout = {
-    xaxis: {
-      tickfont: {
-        size: 14,
-        color: '#2A2D43'
-      }
-    },
     yaxis: {
-      titlefont: {
-      size: 16,
-      color: '#2A2D43'
-      },
       showticklabels: false
     }
   }
