@@ -58,7 +58,7 @@ async function getRequest() {
       type: 'bar',
       orientation: 'h',
       marker: {
-        color: ['#2A2D43']
+        color: ['#2A2D43','#2A2D43']
     }}
   ]
 
