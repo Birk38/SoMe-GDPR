@@ -68,7 +68,7 @@ async function getRequest() {
     }
   }
 
-  Plotly.newPlot('soylediagram', data, layout)
+  Plotly.newPlot('soylediagram', data, layout,{displayModeBar: false})
 }
 
 
