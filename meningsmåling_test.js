@@ -16,6 +16,7 @@ const sporsmolsId = "undersokelse2"
         body: JSON.stringify({id: sporsmolsId, svar: "Ja" })
       })
       console.log("gikk det bra?", response.ok)
+      getRequest();
 }
 
 async function sendNei() {
@@ -23,9 +24,11 @@ async function sendNei() {
         method: 'POST',
         body: JSON.stringify({id: sporsmolsId, svar: "Nei" })
       })
+      getRequest();
 }
 
 getRequest()
+setInterval(getRequest, 60000);
 
 async function getRequest() {
   const htmlObj = document.getElementById("getResult")
