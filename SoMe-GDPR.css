@@ -127,6 +127,10 @@ footer img {
     border: solid 2px;
 }
 
+.mediafooter {
+    display: none;
+}
+
 /*  OM SECTION  */
 #om {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("Ressurser/some_hero.jpeg");
@@ -468,7 +472,30 @@ iframe {
 }
 
 @media only screen and (max-width: 850px) {
+
     footer {
         display: none;
+    }
+
+    .mediafooter {
+        display: block;
+        text-align: center;
+        height: 220px;
+    }
+
+    .mediafooter p {
+        margin: 10px;
+    }
+
+    .insta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .insta i {
+        font-size: 60px;
+        margin: 10px 10px 30px 10px;
     }
 }
