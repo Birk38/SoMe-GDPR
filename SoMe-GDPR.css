@@ -451,9 +451,21 @@ iframe {
         font-size: 15px;
         margin: 0 5px 0 0;
     }
+
+    #poll {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #poll h3 {
+        margin: 15px;
+    }
+
+    #poll div:nth-of-type(1) {
+        display: block;
+        text-align: center;
+    }
 }
-
-
 
 @media only screen and (max-width: 850px) {
     footer {
