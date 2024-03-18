@@ -45,9 +45,9 @@ async function getRequest() {
 
   htmlObj.innerHTML = ""
 
-  // const p = document.createElement("p")
-  // p.textContent = "StatusCodeOK: " + apiCallPromise.ok
-  // htmlObj.appendChild(p)
+/* const p = document.createElement("p")
+   p.textContent = "StatusCodeOK: " + apiCallPromise.ok
+   htmlObj.appendChild(p) */
 
   // Getting the json entries from the response:
   const entries = await apiCallPromise.json()
