@@ -357,6 +357,10 @@ iframe {
     filter: brightness(2);
 }
 
+.mediafooter {
+    display: none;
+}
+
 /* R E S P O N S I V */
 @media only screen and (max-width: 600px) {
 
@@ -456,6 +460,13 @@ iframe {
         margin: 0 5px 0 0;
     }
 
+}
+
+@media only screen and (max-width: 850px) {
+    footer {
+        display: none;
+    }
+
     #poll {
         display: flex;
         flex-direction: column;
@@ -475,6 +486,8 @@ iframe {
 
     footer {
         display: none;
+    .mediafooter {
+        display: block;
     }
 
     .mediafooter {
