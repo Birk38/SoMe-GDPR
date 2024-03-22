@@ -77,6 +77,10 @@ nav i {
     color: var(--platinum);
 }
 
+nav a {
+    text-decoration: none;
+}
+
 nav .container {
     height: 120px;
 }
@@ -125,6 +129,10 @@ footer .flex {
 footer img {
     height: 130px;
     border: solid 2px;
+}
+
+.mediafooter {
+    display: none;
 }
 
 /*  OM SECTION  */
@@ -290,6 +298,64 @@ header {
     background-position: bottom;
 }
 
+#btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+button#uu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 4px var(--eggshell);
+    border-radius: 20px;
+    background-color: white;
+    color: var(--spacecadet);
+    width: 600px;
+}
+#btn a{
+    text-decoration: none;
+}
+
+button#uu p {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+button#uu i {
+    margin-right: 100px;
+}
+
+button#uu:hover {
+    background-color: var(--spacecadet);
+    color: var(--platinum);
+    border-color: var(--spacecadet);
+    transition: 0.8s;
+}
+
+button#uu:hover i {
+    color: var(--platinum);
+    margin-right: 50px;
+    transition: 1s;
+}
+
+button#uu:not(:hover) {
+    background-color: white;
+    color: var(--spacecadet);
+    border-color: var(--eggshell);
+    transition: 0.5s;
+}
+
+button#uu:not(:hover) i {
+    color: var(--spacecadet);
+    margin-right: 100px;
+    transition: 0.8s;
+}
+
 /* KILDER */
 
 .kilder {
@@ -351,6 +417,10 @@ iframe {
 
 #knapper > button:hover {
     filter: brightness(2);
+}
+
+.mediafooter {
+    display: none;
 }
 
 /* R E S P O N S I V */
@@ -452,6 +522,13 @@ iframe {
         margin: 0 5px 0 0;
     }
 
+}
+
+@media only screen and (max-width: 850px) {
+    footer {
+        display: none;
+    }
+
     #poll {
         display: flex;
         flex-direction: column;
@@ -470,5 +547,30 @@ iframe {
 @media only screen and (max-width: 850px) {
     footer {
         display: none;
+    }
+    .mediafooter {
+        display: block;
+    }
+
+    .mediafooter {
+        display: block;
+        text-align: center;
+        height: 220px;
+    }
+
+    .mediafooter p {
+        margin: 10px;
+    }
+
+    .insta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .insta i {
+        font-size: 60px;
+        margin: 10px 10px 30px 10px;
     }
 }
