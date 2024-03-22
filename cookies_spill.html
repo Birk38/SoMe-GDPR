@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="SoMe-GDPR.css">
+    <!-- <link rel="stylesheet" href="SoMe-GDPR.css"> -->
     <link href="Ressurser/favicon_mørk/favicon.ico" rel="icon" media="(prefers-color-scheme: light)"/>
     <link href="Ressurser/favicon_lys/favicon.ico"rel="icon" media="(prefers-color-scheme: dark)"/>
+    <link rel="stylesheet" href="cookie_spill.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    
     <title>Sosiale spor - Cookies spill</title>
 </head>
 
@@ -18,7 +23,7 @@
         <div class="container flex">
             <h1>Sosiale Spor</h1>
             <div class="normal-menu">
-                <a href="index.html"><i class="fa-solid fa-hashtag"></i></a>
+                <a href="index.html"><i class="fa-solid fa-hashtag nav-ikon"></i></a>
                 <a href="GDPR_og_lover.html"><i class="fa-solid fa-section"></i></a>
                 <a href="cookies_spill.html"><i class="fa-solid fa-cookie-bite border"></i></a>
                 <a href="kilder.html"><i class="fa-solid fa-paperclip fa-flip-horizontal"></i></a>
@@ -35,6 +40,45 @@
         </div>
     </nav>
 
+    <div class="top_menu">
+
+        <div class="healthbar">
+          <i id="liv1" class="fa-solid fa-heart liv"></i>
+          <i id="liv2" class="fa-solid fa-heart liv"></i>
+          <i id="liv3" class="fa-solid fa-heart liv"></i>
+          <i id="liv4" class="fa-solid fa-heart liv"></i>
+        </div>
+  
+        <div id="pauseButton">
+          Pause
+        </div>
+  
+  
+        <div class="score">
+          <h2>Score: </h2>
+          <h2 id="score">0</h2>
+        </div>
+  
+      </div>
+  
+      <div class="hide" id="cookie_popup">
+        <img src="bilder/cookies popup.png" alt="bilde av cookies" class="cookies">
+        <h2>We value your privacy</h2>
+        <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic.  By clicking "Accept", you consent to our use of cookies and giving up your first born child. Sosiale Spor works with third party vendors to provide a more customized experience for you. To do so, we disclose personally idemtifiable information about you (specifically your name, adress, and social security number) to those vendors, though we <span id="strikethrough">
+        do not </span> allow them to re-sell or use that information for their own purposes.</p>
+        <button type="button" id="acceptButton">Accept</button>
+        <img src="bilder/close.png" alt="kryss" class="close-icon" id="kryss">
+      </div>
+  
+      <div id="loss_popup">
+        <h3>Du fikk virus</h3>
+        <p>Husk å alltid lese gjennom cookies, og avslå de som ikke er essensielle!</p>
+        <p>Din score:</p>
+        <p id="final_score">3000</p>
+        <p id="restart_knapp">Restart</p>
+      </div>
+
+    <script src="cookie_spill.js"></script>
 </body>
 
 </html>
