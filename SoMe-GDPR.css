@@ -77,6 +77,10 @@ nav i {
     color: var(--platinum);
 }
 
+nav a {
+    text-decoration: none;
+}
+
 nav .container {
     height: 120px;
 }
@@ -292,6 +296,64 @@ header {
 .tre {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Ressurser/parlament.jpg");
     background-position: bottom;
+}
+
+#btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+button#uu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 4px var(--eggshell);
+    border-radius: 20px;
+    background-color: white;
+    color: var(--spacecadet);
+    width: 600px;
+}
+#btn a{
+    text-decoration: none;
+}
+
+button#uu p {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+button#uu i {
+    margin-right: 100px;
+}
+
+button#uu:hover {
+    background-color: var(--spacecadet);
+    color: var(--platinum);
+    border-color: var(--spacecadet);
+    transition: 0.8s;
+}
+
+button#uu:hover i {
+    color: var(--platinum);
+    margin-right: 50px;
+    transition: 1s;
+}
+
+button#uu:not(:hover) {
+    background-color: white;
+    color: var(--spacecadet);
+    border-color: var(--eggshell);
+    transition: 0.5s;
+}
+
+button#uu:not(:hover) i {
+    color: var(--spacecadet);
+    margin-right: 100px;
+    transition: 0.8s;
 }
 
 /* KILDER */
