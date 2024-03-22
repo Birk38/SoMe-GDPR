@@ -78,3 +78,18 @@ function showTiktok() {
     tti.classList.remove("stor");
   }
 }
+
+/* U N I V E R S E L L  U T F O R M I N G */
+/*
+const darkbtn = document.getElementById("darkbtn")
+let body = document.querySelector("body")
+
+darkbtn.addEventListener("onclick", function(evt) {
+  body = evt.target
+  body.classList.toggle(".darkmode")
+}) 
+ 
+function darkMode() {
+  const body = document.querySelector("body")
+  body.classList.add(".darkmode")
+} */
