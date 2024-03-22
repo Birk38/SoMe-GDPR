@@ -88,8 +88,5 @@ darkbtn.addEventListener("onclick", function(evt) {
   body = evt.target
   body.classList.toggle(".darkmode")
 }) 
- 
-function darkMode() {
-  const body = document.querySelector("body")
-  body.classList.add(".darkmode")
-} */
+*/
+
