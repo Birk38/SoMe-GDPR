@@ -85,12 +85,10 @@ const lysbtn = document.getElementById("lysbtn");
 const body = document.body;
 
 darkbtn.addEventListener("click", function() {
-    console.log("mørk modus");
     body.classList.add("darkmode");
 });
 
 lysbtn.addEventListener("click", function() {
-    console.log("lys modus");
     body.classList.remove("darkmode");
 });
 
