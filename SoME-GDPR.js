@@ -80,13 +80,17 @@ function showTiktok() {
 }
 
 /* U N I V E R S E L L  U T F O R M I N G */
-/*
-const darkbtn = document.getElementById("darkbtn")
-let body = document.querySelector("body")
+const darkbtn = document.getElementById("darkbtn");
+const lysbtn = document.getElementById("lysbtn");
+const body = document.body;
 
-darkbtn.addEventListener("onclick", function(evt) {
-  body = evt.target
-  body.classList.toggle(".darkmode")
-}) 
-*/
+darkbtn.addEventListener("click", function() {
+    console.log("mørk modus");
+    body.classList.add("darkmode");
+});
+
+lysbtn.addEventListener("click", function() {
+    console.log("lys modus");
+    body.classList.remove("darkmode");
+});
 

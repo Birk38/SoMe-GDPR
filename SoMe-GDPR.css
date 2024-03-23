@@ -500,6 +500,13 @@ main {
 }
 
 /* M Ø R K  M O D U S */
+
+
+body {
+    transition: background-color 2s ease, color 2s ease, border-color 2s ease;
+}
+/*Skummelt å style hele body, men har ikke funnet noen konflikter enda -Birk*/
+
 .darkmode {
     background-color: var(--spacecadet);
 }
