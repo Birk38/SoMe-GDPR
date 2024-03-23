@@ -260,6 +260,12 @@ header {
 
 .highlight {
     background-color: var(--azure);
+    padding: 2px;
+}
+
+.fa-solid.fa-arrow-down {
+    font-size: 19px;
+    margin: 5px 10px 0 5px;
 }
 
 #gdpr {
@@ -357,6 +363,11 @@ button#uu {
 #uu:not(:hover) i {
     margin-right: 100px;
     transition: 0.8s;
+}
+
+#scroll {
+    text-decoration: none;
+    color: var(--spacecadet);
 }
 
 /* U N I V E R S E L L  U T F O R M I N G */
