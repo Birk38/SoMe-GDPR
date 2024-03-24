@@ -60,6 +60,7 @@ function preload() {
   zuck.file = loadImage('bilder/The zuck.jpeg')
   cookie_bilde = loadImage('bilder/cookie.png')
   virus_bilde = loadImage('bilder/virus.png')
+  rasmus_bilde = loadImage('bilder/rasmus.jpeg')
 }
 
 let lastFrameTime = 0
@@ -236,13 +237,13 @@ class Virus {
   }
 
   update() {
-    this.x_pos += this.velocity.x;
-    this.y_pos += this.velocity.y;
+    this.x_pos += this.velocity.x
+    this.y_pos += this.velocity.y
   }
 
   display() {
-    fill(255, 0, 0);
-    image(virus_bilde, this.x_pos, this.y_pos, this.width, this.height);
+    fill(255, 0, 0)
+    image(virus_bilde, this.x_pos, this.y_pos, this.width, this.height)
   }
 
   isOffscreen() {
@@ -288,7 +289,7 @@ function draw() {
   frameRate(30)
 
   if (!isPaused) {
-    background(150, 230, 240)   //skyblå
+    background(140, 177, 196)   //skyblå
     rectMode(CENTER)
 
     //bakgrunn ramme
@@ -374,7 +375,7 @@ function draw() {
     for (i = 0; i < objects.length; i++) {
       stroke(0)
       strokeWeight(1)
-      fill(200, 200, 200)
+      fill(237, 238, 234)
       rect(objects[i].x_pos, objects[i].y_pos, objects[i].width, objects[i].height)
     }
 
@@ -382,7 +383,7 @@ function draw() {
     stroke(0)
     strokeWeight(2)
     fill(150, 0, 170)
-    rect(player.x_pos, player.y_pos, player.width, player.height)
+    image(rasmus_bilde, player.x_pos, player.y_pos, player.width, player.height)
 
   }
 

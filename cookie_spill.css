@@ -7,7 +7,7 @@ html, body {
   
   canvas {
     display: block;
-    margin: 0 auto;
+    margin-left: 20%;
   }
   
   .healthbar {
@@ -23,7 +23,7 @@ html, body {
   .top_menu {
     width: 70%;
   
-    margin: 0 auto 0 auto;
+    margin: 0 auto 0 20%;
   
     display: flex;
   
@@ -38,23 +38,36 @@ html, body {
     width: 250px;
     font-size: 20px;
   }
+
+  #forklaring {
+    position: absolute;
+    width: 230px;
+    background-color: var(--azure);
+    border-radius: 15px;
+    padding: 0 15px;
+    margin-left: 13px;
+  }
+
+  #forklaring p {
+    font-size: 13px;
+  }
   
   #loss_popup {
     
     width: 450px;
-    height: 400px;
+    height: 500px;
   
     position: absolute;
    
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(221, 221, 221);
+    background-color: var(--azure);
   
     border-radius: 20px;
     border: 2px solid black;
   
-    display: none;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -63,6 +76,7 @@ html, body {
   #loss_popup h3 {
     margin: 20px;
     font-size: 50px;
+    
   }
   
   #loss_popup p {
@@ -75,7 +89,7 @@ html, body {
   
   #restart_knapp {
     padding: 5px;
-    background-color: rgb(244, 246, 211);
+    background-color: var(--eggshell);
     font-size: 40px;
     border: 1px black solid;
     border-radius: 5px;
@@ -90,18 +104,28 @@ html, body {
     width: 80%;
     max-width: 450px;
     text-align: center;
-    padding: 80px 60px;
-    font-size: 16px;
+    padding: 60px 50px;
+    font-size: 10px;
     font-weight: 500;
     background-color: #fff;
     border-radius: 8px;
     font-style: italic;
-    line-height: 20px;
+    line-height: 11px;
+    height: 500px;
     border: 1px black solid;
   
     display: none;
   }
+
+  #cookie_popup h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
   
+  #cookie_popup p {
+    font-size: 15px;
+  }
+
   .cookies {
     width: 100px;
     margin-bottom: 15px;
@@ -152,7 +176,15 @@ html, body {
     -o-transition: opacity 1s linear;
   }
 
-  /* Fra hovedsiden */
+#pauseButton{
+  background-color: var(--platinum);
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Fra hovedsiden */
 
 nav {
     background-color: var(--spacecadet);
@@ -173,11 +205,11 @@ nav .container {
 
 :root {
   --spacecadet: #2A2D43;
-  --delft: #2C3C57;
+  --delft: #2c3c57;
   --powder: #B2C3D2;
-  --carolina: #8DB1C4;
+  --carolina: rgb(140, 177, 196);
   --azure: #DCE7E7;
-  --platinum: #EDEEEA;
+  --platinum: rgb(237, 238, 234);
   --eggshell: #EEE7D6;
 }
 
@@ -229,4 +261,12 @@ i {
 
 section {
     padding: 20px 0;
+}
+
+#overskift_cookie {
+  text-decoration: none !important;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
 }
