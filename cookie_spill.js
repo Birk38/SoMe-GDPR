@@ -288,6 +288,13 @@ function draw() {
 
   frameRate(30)
 
+  if (antall_bortgjemminger > 0) {
+    closeButtonDimensions += 0.09
+
+    closeButton.style.width = closeButtonDimensions + 'px'
+    closeButton.style.height = closeButtonDimensions + 'px'
+  } 
+
   if (!isPaused) {
     background(140, 177, 196)   //skyblå
     rectMode(CENTER)
@@ -307,6 +314,8 @@ function draw() {
     zuck_move()
 
     addScore()
+
+ 
 
     let cookiesToRemove = [];
 
@@ -500,9 +509,9 @@ function loseLife() {
   if (remaining_lives.length > 1) {
     remaining_lives[remaining_lives.length - 1].style.color = "gray"
     lost_lives.push(remaining_lives.pop())
-  } else {
-    remaining_lives[remaining_lives.length - 1].style.color = "gray"
-    lost_lives.push(remaining_lives.pop())
+  } else {    
+    remaining_lives = [life_1, life_2, life_3, life_4]
+    lost_lives = []
     playerLost()
   }
 }
@@ -538,9 +547,29 @@ pauseButton.addEventListener("click", function () {
   }
 })
 
+let antall_bortgjemminger = 0
+let closeButtonDimensions = 12
+
+closeButton.addEventListener("mouseover", function() {
+  antall_bortgjemminger += 1
+  closeButtonDimensions = 12
+
+  closeButton.style.width = closeButtonDimensions + "px"
+  closeButton.style.height = closeButtonDimensions + "px"
+
+  if (antall_bortgjemminger < 4) {
+    closeButton.style.top = Math.floor(Math.random() * 465) + 25 + 'px'
+    closeButton.style.right = Math.floor(Math.random() * 420) + 25 + 'px'
+  } else {
+    closeButton.style.top = 25 + 'px'
+    closeButton.style.right = 25 + 'px'
+  }
+})
+
 closeButton.addEventListener("click", function () {
   hidePopup()
   isPaused = false
+  antall_bortgjemminger = 0
 })
 
 acceptButton.addEventListener("click", function () {
