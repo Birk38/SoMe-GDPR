@@ -227,7 +227,7 @@ class Virus {
   constructor(x, y, target) {
     this.position = createVector(x, y)
     this.velocity = p5.Vector.sub(createVector(target.x_pos, target.y_pos), this.position)
-    this.velocity.setMag(20 * (speed_factor) / 2)
+    this.velocity.setMag(15 * (speed_factor) / 2)
 
     this.height = 12
     this.width = 12
